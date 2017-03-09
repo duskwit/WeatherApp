@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html id = "main">
+	<head>
+		<title>Weather App</title>
+		<meta charset = "utf-8">
+		<link rel="stylesheet" href="css/reset.css" type="text/css">
+		<link rel="stylesheet" href="css/wapp.css" type="text/css">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+	</head>
+	<body onLoad="initGeolocation();">
+		<h1>Weather app</h1>
+		<h2>Search for a city and its current weather here:</h2>
+		<div id="searchbox">
+			<input type="text" id="searchBar" placeholder="Search for a city...">
+			<button type="submit" onclick="searchCity();"><i class="fa fa-search"></i></button>
+		</div>
+		<h2>What is the weather <a href="index.html">in your location</a> now?</h2>
+		<div id="mainbox">
+			<ul>
+				<li>
+					<i class='fa fa-map-marker'></i>
+					<div id="dis"></div>
+				</li> <hr>
+				<li>
+					<i class='fa fa-thermometer-full'></i>
+					<div id="temp"></div>
+					<button onclick="changeUnits();">
+						<div id="units"></div>
+					</button>
+				</li><hr>
+				<li>
+					<i class='fa fa-cloud'></i>
+					<div id="desc"></div>
+				</li> <hr>
+				<li>
+					<div id="wind"></div>
+				</li> 
+			</ul>
+		</div>
+		<div id="lat"></div>
+   		<div id="long"></div>
+	<script src="main.js"></script>
+	</body>
+	<footer>
+		created by <a href="https://github.com/duskwit">K.Witkowska</a>
+	</footer>
+</html>

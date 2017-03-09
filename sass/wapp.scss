@@ -1,0 +1,148 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+$turkus: #02b0ae;
+$fiolet: #283152;
+$babyblue: #A1C7FF;
+$darkgrey: #282828;
+
+$mainfont: 25px;
+
+html { 
+    background: url(../img/snowy.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    overflow: hidden;
+}
+
+body {
+	padding: 70px 80px;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+
+	a {
+		text-decoration: none;
+		color: $babyblue;
+	}
+}
+
+h1 {
+	font-family: 'Slabo 27px', sans-serif;
+	font-weight: bold;
+	font-size: 60px;
+	color: white;
+}
+
+h2 {
+	padding: 20px 0;
+	color: $darkgrey;
+	clear:both;
+}
+
+#searchbox {
+	width: 500px;
+	margin: auto;
+	color: #282828;
+
+	input {
+		width: 400px;
+		border-style: none;	
+		font-size: 15px;
+		padding: 10px;
+		margin: 0;
+		background: transparent;
+		border-radius: 6px;
+		border: solid 1px #282828;
+		font-family: 'Roboto', sans-serif;
+		float: left;
+
+		&:active,
+		&:focus {
+			border-color: $turkus;
+		}
+	}
+
+	button {
+		margin: 0 10px;
+		padding: 5px 10px;
+		font-size: 1.5em;
+		border: solid 1px #282828;
+		border-radius: 6px;
+		style: none;
+		background: transparent;
+		float: left;
+
+		&:hover {
+			cursor: pointer;
+			background-color: $turkus;
+			border-color: $turkus;
+			color: #fff;
+
+			-webkit-transition: ease-in-out 0.4s;
+			-moz-transition: ease-in-out 0.4s;
+			-o-transition: ease-in-out 0.4s;
+			transition: ease-in-out 0.4s;
+		}
+	}
+}
+
+
+#mainbox {
+	margin: 0 auto 40px;
+	width: 700px;
+	background-color: white;
+	opacity: 0.6;
+	border-radius: 15px;
+	display: block;
+
+	ul {
+		padding: 40px;
+		font-size: $mainfont;
+
+		i {
+			display: inline-block;
+		}
+
+		li {
+			padding: 10px;
+
+			i, div {
+				padding: 0 5px;
+				display: inline-block;
+			}
+
+			span {
+				&:hover {
+					cursor: pointer;
+				}
+			}
+
+			button {
+				padding: 2px;
+				font-size: 0.95em;
+				border: solid 1px #282828;
+				border-radius: 6px;
+				background: transparent;
+
+				&:hover {
+					cursor: pointer;
+					background-color: $turkus;
+					border-color: $turkus;
+					color: #fff;
+
+					-webkit-transition: ease-in-out 0.4s;
+					-moz-transition: ease-in-out 0.4s;
+					-o-transition: ease-in-out 0.4s;
+					transition: ease-in-out 0.4s;
+				}
+			}
+		}
+	}
+}
+
+footer {
+	color: white;
+	font-size: 14px;
+}

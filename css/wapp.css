@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+html {
+  background: url(../img/snowy.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: hidden; }
+
+body {
+  padding: 70px 80px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center; }
+  body a {
+    text-decoration: none;
+    color: #A1C7FF; }
+
+h1 {
+  font-family: 'Slabo 27px', sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  color: white; }
+
+h2 {
+  padding: 20px 0;
+  color: #282828;
+  clear: both; }
+
+#searchbox {
+  width: 500px;
+  margin: auto;
+  color: #282828; }
+  #searchbox input {
+    width: 400px;
+    border-style: none;
+    font-size: 15px;
+    padding: 10px;
+    margin: 0;
+    background: transparent;
+    border-radius: 6px;
+    border: solid 1px #282828;
+    font-family: 'Roboto', sans-serif;
+    float: left; }
+    #searchbox input:active, #searchbox input:focus {
+      border-color: #02b0ae; }
+  #searchbox button {
+    margin: 0 10px;
+    padding: 5px 10px;
+    font-size: 1.5em;
+    border: solid 1px #282828;
+    border-radius: 6px;
+    style: none;
+    background: transparent;
+    float: left; }
+    #searchbox button:hover {
+      cursor: pointer;
+      background-color: #02b0ae;
+      border-color: #02b0ae;
+      color: #fff;
+      -webkit-transition: ease-in-out 0.4s;
+      -moz-transition: ease-in-out 0.4s;
+      -o-transition: ease-in-out 0.4s;
+      transition: ease-in-out 0.4s; }
+
+#mainbox {
+  margin: 0 auto 40px;
+  width: 700px;
+  background-color: white;
+  opacity: 0.6;
+  border-radius: 15px;
+  display: block; }
+  #mainbox ul {
+    padding: 40px;
+    font-size: 25px; }
+    #mainbox ul i {
+      display: inline-block; }
+    #mainbox ul li {
+      padding: 10px; }
+      #mainbox ul li i, #mainbox ul li div {
+        padding: 0 5px;
+        display: inline-block; }
+      #mainbox ul li span:hover {
+        cursor: pointer; }
+      #mainbox ul li button {
+        padding: 2px;
+        font-size: 0.95em;
+        border: solid 1px #282828;
+        border-radius: 6px;
+        background: transparent; }
+        #mainbox ul li button:hover {
+          cursor: pointer;
+          background-color: #02b0ae;
+          border-color: #02b0ae;
+          color: #fff;
+          -webkit-transition: ease-in-out 0.4s;
+          -moz-transition: ease-in-out 0.4s;
+          -o-transition: ease-in-out 0.4s;
+          transition: ease-in-out 0.4s; }
+
+footer {
+  color: white;
+  font-size: 14px; }
+
+/*# sourceMappingURL=wapp.css.map */
